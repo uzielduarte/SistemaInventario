@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="SistemaInventario.AccesoDatos/SistemaInventario.AccesoDatos.csproj" />
+  <Project Path="SistemaInventario.Modelos/SistemaInventario.Modelos.csproj" />
+  <Project Path="SistemaInventario.Utilidades/SistemaInventario.Utilidades.csproj" />
   <Project Path="SistemaInventario/SistemaInventario.csproj" />
 </Solution>
