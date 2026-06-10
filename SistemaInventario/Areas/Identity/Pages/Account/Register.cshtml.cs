@@ -209,6 +209,16 @@ public class RegisterModel : PageModel
                     }
                 }
             }
+
+            Input = new InputModel()
+            {
+                ListaRole = _roleManager.Roles.Where(r => r.Name != DS.Role_Cliente).Select(n => n.Name).Select(l => new SelectListItem
+                {
+                    Text = l,
+                    Value = l
+                })
+            };
+
             foreach (var error in result.Errors)
             {
                 ModelState.AddModelError(string.Empty, error.Description);
